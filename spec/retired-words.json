@@ -1,0 +1,7 @@
+{
+  "spec": "Squarenames v1 \u2014 retired words",
+  "wordlist_version": "1.0.0",
+  "rule": "A retired word was replaced in place at its index by `current`. Resolvers apply the table as an exact substitution wherever a word is looked up (decoding, check tokens, input), so a name written under an earlier list resolves to the same square. Encoders never emit a retired word. A retired word is never reused. The table is additive and versioned with the wordlist.",
+  "adjectives": {},
+  "nouns": {}
+}

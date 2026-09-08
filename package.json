@@ -1,0 +1,75 @@
+{
+  "name": "squarename",
+  "version": "0.1.1",
+  "description": "Squarenames: a computed, offline, speakable address for every 3-metre square on Earth. Reference implementation of the Squarenames v1 specification.",
+  "license": "Apache-2.0",
+  "author": "SQRS",
+  "homepage": "https://github.com/sqrsworld/squarename#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqrsworld/squarename.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sqrsworld/squarename/issues"
+  },
+  "keywords": [
+    "squarename",
+    "squarenames",
+    "location",
+    "address",
+    "geocode",
+    "grid",
+    "offline",
+    "web-mercator"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./spec/test-vectors.json": "./spec/test-vectors.json",
+    "./spec/variant-spellings.json": "./spec/variant-spellings.json",
+    "./package.json": "./package.json",
+    "./spec/retired-words.json": "./spec/retired-words.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "spec/squarenames-v1.md",
+    "spec/test-vectors.json",
+    "spec/variant-spellings.json",
+    "spec/retired-words.json",
+    "NOTICE",
+    "LICENSE",
+    "LICENSE-SPEC",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "vectors": "tsx scripts/build-vectors.ts",
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm build",
+    "prepublishOnly": "pnpm check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^22.19.0",
+    "double-metaphone": "^2.0.1",
+    "eslint": "^9.39.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^4.1.8"
+  }
+}

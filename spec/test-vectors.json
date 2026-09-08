@@ -1,0 +1,831 @@
+{
+  "spec": "Squarenames v1",
+  "generated_at": "2026-09-08T21:26:16.621Z",
+  "generator": "scripts/build-vectors.ts against the reference implementation (src/)",
+  "wordlist_version": "1.0.0",
+  "tolerance": "the decode point must lie within 2.13 m (half a spot diagonal) of the input, and encoding it must reproduce the name exactly (spec §5)",
+  "vectors": [
+    {
+      "name": "london-notting-hill",
+      "why": "an ordinary northern-hemisphere, western-longitude point",
+      "input": {
+        "lat": 51.5152,
+        "lng": -0.205
+      },
+      "id": {
+        "region": "51n1w-d3",
+        "sector": "splashy",
+        "patch": "sheep",
+        "spot": 15
+      },
+      "canonical": "51n1w-d3.splashy.sheep.15",
+      "canonical_with_check_char": "51n1w-d3.splashy.sheep.15.5",
+      "canonical_with_check_word": "51n1w-d3.splashy.sheep.15.crystal",
+      "check": {
+        "value": 2323,
+        "char": "5",
+        "word": "crystal"
+      },
+      "decode_point": {
+        "lat": 51.515205093,
+        "lng": -0.20500588
+      },
+      "decode_error_m": 0.697,
+      "reencoded": "51n1w-d3.splashy.sheep.15"
+    },
+    {
+      "name": "london-greenwich-meridian",
+      "why": "exactly on the prime meridian — lng 0 is the first column of an east region",
+      "input": {
+        "lat": 51.4779,
+        "lng": 0
+      },
+      "id": {
+        "region": "51n0e-a3",
+        "sector": "tangled",
+        "patch": "simile",
+        "spot": 16
+      },
+      "canonical": "51n0e-a3.tangled.simile.16",
+      "canonical_with_check_char": "51n0e-a3.tangled.simile.16.w",
+      "canonical_with_check_word": "51n0e-a3.tangled.simile.16.toboggan",
+      "check": {
+        "value": 2928,
+        "char": "w",
+        "word": "toboggan"
+      },
+      "decode_point": {
+        "lat": 51.477904226,
+        "lng": 0.000021646
+      },
+      "decode_error_m": 1.571,
+      "reencoded": "51n0e-a3.tangled.simile.16"
+    },
+    {
+      "name": "london-just-west-of-meridian",
+      "why": "one step west of lng 0 — must land in a west region, not wrap",
+      "input": {
+        "lat": 51.4779,
+        "lng": -1e-7
+      },
+      "id": {
+        "region": "51n1w-e3",
+        "sector": "elusive",
+        "patch": "sale",
+        "spot": 20
+      },
+      "canonical": "51n1w-e3.elusive.sale.20",
+      "canonical_with_check_char": "51n1w-e3.elusive.sale.20.y",
+      "canonical_with_check_word": "51n1w-e3.elusive.sale.20.matchday",
+      "check": {
+        "value": 1759,
+        "char": "y",
+        "word": "matchday"
+      },
+      "decode_point": {
+        "lat": 51.477904226,
+        "lng": -0.000021646
+      },
+      "decode_error_m": 1.564,
+      "reencoded": "51n1w-e3.elusive.sale.20"
+    },
+    {
+      "name": "band-seam-below-51n",
+      "why": "just under a 1° band seam — the lattice is the 50° band's",
+      "input": {
+        "lat": 50.9999999,
+        "lng": -0.2
+      },
+      "id": {
+        "region": "50n1w-d5",
+        "sector": "airtight",
+        "patch": "keg",
+        "spot": 10
+      },
+      "canonical": "50n1w-d5.airtight.keg.10",
+      "canonical_with_check_char": "50n1w-d5.airtight.keg.10.g",
+      "canonical_with_check_word": "50n1w-d5.airtight.keg.10.gazebo",
+      "check": {
+        "value": 3357,
+        "char": "g",
+        "word": "gazebo"
+      },
+      "decode_point": {
+        "lat": 50.999989094,
+        "lng": -0.2
+      },
+      "decode_error_m": 1.202,
+      "reencoded": "50n1w-d5.airtight.keg.10"
+    },
+    {
+      "name": "band-seam-at-51n",
+      "why": "exactly on the seam — belongs to the 51° band (floor)",
+      "input": {
+        "lat": 51,
+        "lng": -0.2
+      },
+      "id": {
+        "region": "51n1w-d1",
+        "sector": "honest",
+        "patch": "lobster",
+        "spot": 1
+      },
+      "canonical": "51n1w-d1.honest.lobster.1",
+      "canonical_with_check_char": "51n1w-d1.honest.lobster.1.9",
+      "canonical_with_check_word": "51n1w-d1.honest.lobster.1.forester",
+      "check": {
+        "value": 2644,
+        "char": "9",
+        "word": "forester"
+      },
+      "decode_point": {
+        "lat": 51,
+        "lng": -0.2
+      },
+      "decode_error_m": 0,
+      "reencoded": "51n1w-d1.honest.lobster.1"
+    },
+    {
+      "name": "band-seam-above-51n",
+      "why": "just over the seam — the 51° band's lattice, recalibrated size",
+      "input": {
+        "lat": 51.0000001,
+        "lng": -0.2
+      },
+      "id": {
+        "region": "51n1w-d1",
+        "sector": "honest",
+        "patch": "lobster",
+        "spot": 1
+      },
+      "canonical": "51n1w-d1.honest.lobster.1",
+      "canonical_with_check_char": "51n1w-d1.honest.lobster.1.9",
+      "canonical_with_check_word": "51n1w-d1.honest.lobster.1.forester",
+      "check": {
+        "value": 2644,
+        "char": "9",
+        "word": "forester"
+      },
+      "decode_point": {
+        "lat": 51,
+        "lng": -0.2
+      },
+      "decode_error_m": 0.011,
+      "reencoded": "51n1w-d1.honest.lobster.1"
+    },
+    {
+      "name": "region-edge-lat-51.2-below",
+      "why": "just under a 0.2° region-tile edge (rank boundary)",
+      "input": {
+        "lat": 51.1999999,
+        "lng": -0.2
+      },
+      "id": {
+        "region": "51n1w-d1",
+        "sector": "spotted",
+        "patch": "boatyard",
+        "spot": 11
+      },
+      "canonical": "51n1w-d1.spotted.boatyard.11",
+      "canonical_with_check_char": "51n1w-d1.spotted.boatyard.11.8",
+      "canonical_with_check_word": "51n1w-d1.spotted.boatyard.11.ointment",
+      "check": {
+        "value": 2350,
+        "char": "8",
+        "word": "ointment"
+      },
+      "decode_point": {
+        "lat": 51.199995203,
+        "lng": -0.2
+      },
+      "decode_error_m": 0.522,
+      "reencoded": "51n1w-d1.spotted.boatyard.11"
+    },
+    {
+      "name": "region-edge-lat-51.2-exact",
+      "why": "exactly on the tile edge — belongs to the tile it opens",
+      "input": {
+        "lat": 51.2,
+        "lng": -0.2
+      },
+      "id": {
+        "region": "51n1w-d1",
+        "sector": "spotted",
+        "patch": "boatyard",
+        "spot": 11
+      },
+      "canonical": "51n1w-d1.spotted.boatyard.11",
+      "canonical_with_check_char": "51n1w-d1.spotted.boatyard.11.8",
+      "canonical_with_check_word": "51n1w-d1.spotted.boatyard.11.ointment",
+      "check": {
+        "value": 2350,
+        "char": "8",
+        "word": "ointment"
+      },
+      "decode_point": {
+        "lat": 51.199995203,
+        "lng": -0.2
+      },
+      "decode_error_m": 0.533,
+      "reencoded": "51n1w-d1.spotted.boatyard.11"
+    },
+    {
+      "name": "region-edge-lng-0.2-exact",
+      "why": "exactly on a 0.2° longitude tile edge (file boundary)",
+      "input": {
+        "lat": 51.5,
+        "lng": -0.2
+      },
+      "id": {
+        "region": "51n1w-d3",
+        "sector": "prudent",
+        "patch": "saver",
+        "spot": 16
+      },
+      "canonical": "51n1w-d3.prudent.saver.16",
+      "canonical_with_check_char": "51n1w-d3.prudent.saver.16.r",
+      "canonical_with_check_word": "51n1w-d3.prudent.saver.16.cliff",
+      "check": {
+        "value": 2652,
+        "char": "r",
+        "word": "cliff"
+      },
+      "decode_point": {
+        "lat": 51.500008136,
+        "lng": -0.2
+      },
+      "decode_error_m": 0.905,
+      "reencoded": "51n1w-d3.prudent.saver.16"
+    },
+    {
+      "name": "region-edge-lng-0.2-west",
+      "why": "just west of that edge — previous file",
+      "input": {
+        "lat": 51.5,
+        "lng": -0.2000001
+      },
+      "id": {
+        "region": "51n1w-d3",
+        "sector": "prudent",
+        "patch": "saver",
+        "spot": 16
+      },
+      "canonical": "51n1w-d3.prudent.saver.16",
+      "canonical_with_check_char": "51n1w-d3.prudent.saver.16.r",
+      "canonical_with_check_word": "51n1w-d3.prudent.saver.16.cliff",
+      "check": {
+        "value": 2652,
+        "char": "r",
+        "word": "cliff"
+      },
+      "decode_point": {
+        "lat": 51.500008136,
+        "lng": -0.2
+      },
+      "decode_error_m": 0.905,
+      "reencoded": "51n1w-d3.prudent.saver.16"
+    },
+    {
+      "name": "equator-north",
+      "why": "just north of the equator (Nairobi longitude) — the 0° band",
+      "input": {
+        "lat": 1e-7,
+        "lng": 36.8219
+      },
+      "id": {
+        "region": "0n36e-e1",
+        "sector": "entire",
+        "patch": "crossbar",
+        "spot": 5
+      },
+      "canonical": "0n36e-e1.entire.crossbar.5",
+      "canonical_with_check_char": "0n36e-e1.entire.crossbar.5.m",
+      "canonical_with_check_word": "0n36e-e1.entire.crossbar.5.corduroy",
+      "check": {
+        "value": 2648,
+        "char": "m",
+        "word": "corduroy"
+      },
+      "decode_point": {
+        "lat": 0.000013475,
+        "lng": 36.821894782
+      },
+      "decode_error_m": 1.596,
+      "reencoded": "0n36e-e1.entire.crossbar.5"
+    },
+    {
+      "name": "equator-exact",
+      "why": "exactly on the equator — floor puts it in the 0° band, region 0n36e",
+      "input": {
+        "lat": 0,
+        "lng": 36.8219
+      },
+      "id": {
+        "region": "0n36e-e1",
+        "sector": "entire",
+        "patch": "crossbar",
+        "spot": 5
+      },
+      "canonical": "0n36e-e1.entire.crossbar.5",
+      "canonical_with_check_char": "0n36e-e1.entire.crossbar.5.m",
+      "canonical_with_check_word": "0n36e-e1.entire.crossbar.5.corduroy",
+      "check": {
+        "value": 2648,
+        "char": "m",
+        "word": "corduroy"
+      },
+      "decode_point": {
+        "lat": 0.000013475,
+        "lng": 36.821894782
+      },
+      "decode_error_m": 1.607,
+      "reencoded": "0n36e-e1.entire.crossbar.5"
+    },
+    {
+      "name": "equator-south",
+      "why": "just south — the -1° band, region 1s (degree cell -1, rank 5)",
+      "input": {
+        "lat": -1e-7,
+        "lng": 36.8219
+      },
+      "id": {
+        "region": "1s36e-e5",
+        "sector": "inclined",
+        "patch": "speaker",
+        "spot": 25
+      },
+      "canonical": "1s36e-e5.inclined.speaker.25",
+      "canonical_with_check_char": "1s36e-e5.inclined.speaker.25.f",
+      "canonical_with_check_word": "1s36e-e5.inclined.speaker.25.flute",
+      "check": {
+        "value": 2185,
+        "char": "f",
+        "word": "flute"
+      },
+      "decode_point": {
+        "lat": -0.000013475,
+        "lng": 36.821894782
+      },
+      "decode_error_m": 1.596,
+      "reencoded": "1s36e-e5.inclined.speaker.25"
+    },
+    {
+      "name": "sydney",
+      "why": "southern hemisphere, eastern longitude",
+      "input": {
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "id": {
+        "region": "34s151e-b1",
+        "sector": "floral",
+        "patch": "pippin",
+        "spot": 22
+      },
+      "canonical": "34s151e-b1.floral.pippin.22",
+      "canonical_with_check_char": "34s151e-b1.floral.pippin.22.h",
+      "canonical_with_check_word": "34s151e-b1.floral.pippin.22.ledge",
+      "check": {
+        "value": 1298,
+        "char": "h",
+        "word": "ledge"
+      },
+      "decode_point": {
+        "lat": -33.868798377,
+        "lng": 151.209312324
+      },
+      "decode_error_m": 1.152,
+      "reencoded": "34s151e-b1.floral.pippin.22"
+    },
+    {
+      "name": "new-york",
+      "why": "western hemisphere, mid latitude",
+      "input": {
+        "lat": 40.7128,
+        "lng": -74.006
+      },
+      "id": {
+        "region": "40n75w-e4",
+        "sector": "shiny",
+        "patch": "buddy",
+        "spot": 12
+      },
+      "canonical": "40n75w-e4.shiny.buddy.12",
+      "canonical_with_check_char": "40n75w-e4.shiny.buddy.12.8",
+      "canonical_with_check_word": "40n75w-e4.shiny.buddy.12.latch",
+      "check": {
+        "value": 2085,
+        "char": "8",
+        "word": "latch"
+      },
+      "decode_point": {
+        "lat": 40.712803777,
+        "lng": -74.006002958
+      },
+      "decode_error_m": 0.488,
+      "reencoded": "40n75w-e4.shiny.buddy.12"
+    },
+    {
+      "name": "sao-paulo",
+      "why": "south and west",
+      "input": {
+        "lat": -23.5505,
+        "lng": -46.6333
+      },
+      "id": {
+        "region": "24s47w-b3",
+        "sector": "punchy",
+        "patch": "thunder",
+        "spot": 21
+      },
+      "canonical": "24s47w-b3.punchy.thunder.21",
+      "canonical_with_check_char": "24s47w-b3.punchy.thunder.21.9",
+      "canonical_with_check_word": "24s47w-b3.punchy.thunder.21.spaniel",
+      "check": {
+        "value": 3102,
+        "char": "9",
+        "word": "spaniel"
+      },
+      "decode_point": {
+        "lat": -23.550495189,
+        "lng": -46.633306216
+      },
+      "decode_error_m": 0.829,
+      "reencoded": "24s47w-b3.punchy.thunder.21"
+    },
+    {
+      "name": "antimeridian-east-side",
+      "why": "just west of the antimeridian — the last east column (179e-e5)",
+      "input": {
+        "lat": 51.5,
+        "lng": 179.9999999
+      },
+      "id": {
+        "region": "51n179e-e3",
+        "sector": "suburban",
+        "patch": "tunic",
+        "spot": 16
+      },
+      "canonical": "51n179e-e3.suburban.tunic.16",
+      "canonical_with_check_char": "51n179e-e3.suburban.tunic.16.k",
+      "canonical_with_check_word": "51n179e-e3.suburban.tunic.16.finale",
+      "check": {
+        "value": 990,
+        "char": "k",
+        "word": "finale"
+      },
+      "decode_point": {
+        "lat": 51.500008136,
+        "lng": 179.999989536
+      },
+      "decode_error_m": 1.155,
+      "reencoded": "51n179e-e3.suburban.tunic.16"
+    },
+    {
+      "name": "antimeridian-west-side",
+      "why": "just east of the antimeridian — the first west column (180w-a?)",
+      "input": {
+        "lat": 51.5,
+        "lng": -179.9999999
+      },
+      "id": {
+        "region": "51n180w-a3",
+        "sector": "curly",
+        "patch": "sarong",
+        "spot": 20
+      },
+      "canonical": "51n180w-a3.curly.sarong.20",
+      "canonical_with_check_char": "51n180w-a3.curly.sarong.20.q",
+      "canonical_with_check_word": "51n180w-a3.curly.sarong.20.gearbox",
+      "check": {
+        "value": 2303,
+        "char": "q",
+        "word": "gearbox"
+      },
+      "decode_point": {
+        "lat": 51.500008136,
+        "lng": -179.999989536
+      },
+      "decode_error_m": 1.155,
+      "reencoded": "51n180w-a3.curly.sarong.20"
+    },
+    {
+      "name": "antimeridian-exact-plus",
+      "why": "lng +180 exactly — wraps to the column of -180 (mod 1800)",
+      "input": {
+        "lat": 51.5,
+        "lng": 180
+      },
+      "id": {
+        "region": "51n180w-a3",
+        "sector": "curly",
+        "patch": "sarong",
+        "spot": 20
+      },
+      "canonical": "51n180w-a3.curly.sarong.20",
+      "canonical_with_check_char": "51n180w-a3.curly.sarong.20.q",
+      "canonical_with_check_word": "51n180w-a3.curly.sarong.20.gearbox",
+      "check": {
+        "value": 2303,
+        "char": "q",
+        "word": "gearbox"
+      },
+      "decode_point": {
+        "lat": 51.500008136,
+        "lng": -179.999989536
+      },
+      "decode_error_m": 1.159,
+      "reencoded": "51n180w-a3.curly.sarong.20"
+    },
+    {
+      "name": "tromso",
+      "why": "high northern latitude — large band scale",
+      "input": {
+        "lat": 69.6496,
+        "lng": 18.956
+      },
+      "id": {
+        "region": "69n18e-e4",
+        "sector": "brisk",
+        "patch": "cribbage",
+        "spot": 13
+      },
+      "canonical": "69n18e-e4.brisk.cribbage.13",
+      "canonical_with_check_char": "69n18e-e4.brisk.cribbage.13.0",
+      "canonical_with_check_word": "69n18e-e4.brisk.cribbage.13.chess",
+      "check": {
+        "value": 599,
+        "char": "0",
+        "word": "chess"
+      },
+      "decode_point": {
+        "lat": 69.649600552,
+        "lng": 18.955989642
+      },
+      "decode_error_m": 0.405,
+      "reencoded": "69n18e-e4.brisk.cribbage.13"
+    },
+    {
+      "name": "mcmurdo",
+      "why": "high southern latitude",
+      "input": {
+        "lat": -77.8419,
+        "lng": 166.6863
+      },
+      "id": {
+        "region": "78s166e-d1",
+        "sector": "armoured",
+        "patch": "cyclops",
+        "spot": 11
+      },
+      "canonical": "78s166e-d1.armoured.cyclops.11",
+      "canonical_with_check_char": "78s166e-d1.armoured.cyclops.11.k",
+      "canonical_with_check_word": "78s166e-d1.armoured.cyclops.11.mammal",
+      "check": {
+        "value": 3205,
+        "char": "k",
+        "word": "mammal"
+      },
+      "decode_point": {
+        "lat": -77.841888075,
+        "lng": 166.686321595
+      },
+      "decode_error_m": 1.419,
+      "reencoded": "78s166e-d1.armoured.cyclops.11"
+    },
+    {
+      "name": "mercator-clamp-north",
+      "why": "the Mercator clamp at +85° — the last encodable band",
+      "input": {
+        "lat": 85,
+        "lng": 10
+      },
+      "id": {
+        "region": "84n10e-a5",
+        "sector": "gated",
+        "patch": "hamlet",
+        "spot": 11
+      },
+      "canonical": "84n10e-a5.gated.hamlet.11",
+      "canonical_with_check_char": "84n10e-a5.gated.hamlet.11.6",
+      "canonical_with_check_word": "84n10e-a5.gated.hamlet.11.canvas",
+      "check": {
+        "value": 3075,
+        "char": "6",
+        "word": "canvas"
+      },
+      "decode_point": {
+        "lat": 84.999989364,
+        "lng": 10.000140245
+      },
+      "decode_error_m": 1.802,
+      "reencoded": "84n10e-a5.gated.hamlet.11"
+    },
+    {
+      "name": "mercator-clamp-south",
+      "why": "the Mercator clamp at -85°",
+      "input": {
+        "lat": -85,
+        "lng": 10
+      },
+      "id": {
+        "region": "85s10e-a1",
+        "sector": "ancient",
+        "patch": "gulf",
+        "spot": 11
+      },
+      "canonical": "85s10e-a1.ancient.gulf.11",
+      "canonical_with_check_char": "85s10e-a1.ancient.gulf.11.a",
+      "canonical_with_check_word": "85s10e-a1.ancient.gulf.11.enhancer",
+      "check": {
+        "value": 3134,
+        "char": "a",
+        "word": "enhancer"
+      },
+      "decode_point": {
+        "lat": -84.999989364,
+        "lng": 10.000140245
+      },
+      "decode_error_m": 1.802,
+      "reencoded": "85s10e-a1.ancient.gulf.11"
+    },
+    {
+      "name": "degree-corner-52n1e",
+      "why": "an exact integer degree corner — region 52n1e-a1",
+      "input": {
+        "lat": 52,
+        "lng": 1
+      },
+      "id": {
+        "region": "52n1e-a1",
+        "sector": "starry",
+        "patch": "plumber",
+        "spot": 25
+      },
+      "canonical": "52n1e-a1.starry.plumber.25",
+      "canonical_with_check_char": "52n1e-a1.starry.plumber.25.m",
+      "canonical_with_check_word": "52n1e-a1.starry.plumber.25.pulley",
+      "check": {
+        "value": 1625,
+        "char": "m",
+        "word": "pulley"
+      },
+      "decode_point": {
+        "lat": 52,
+        "lng": 1.000021953
+      },
+      "decode_error_m": 1.503,
+      "reencoded": "52n1e-a1.starry.plumber.25"
+    },
+    {
+      "name": "degree-corner-52n1w-side",
+      "why": "an exact integer degree corner on the west side — region 52n1w-a1",
+      "input": {
+        "lat": 52,
+        "lng": -1
+      },
+      "id": {
+        "region": "52n1w-a1",
+        "sector": "clear",
+        "patch": "activity",
+        "spot": 21
+      },
+      "canonical": "52n1w-a1.clear.activity.21",
+      "canonical_with_check_char": "52n1w-a1.clear.activity.21.7",
+      "canonical_with_check_word": "52n1w-a1.clear.activity.21.muffin",
+      "check": {
+        "value": 155,
+        "char": "7",
+        "word": "muffin"
+      },
+      "decode_point": {
+        "lat": 52,
+        "lng": -1
+      },
+      "decode_error_m": 0,
+      "reencoded": "52n1w-a1.clear.activity.21"
+    }
+  ],
+  "parse": [
+    {
+      "input": "51n1w-d3.brave.otter.7",
+      "expect": "accept",
+      "note": "canonical dots",
+      "parsed": {
+        "region": "51n1w-d3",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7
+      }
+    },
+    {
+      "input": "51n1w-d3 · brave · otter · 7",
+      "expect": "accept",
+      "note": "display middots",
+      "parsed": {
+        "region": "51n1w-d3",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7
+      }
+    },
+    {
+      "input": "51n1w-d3 brave otter 7",
+      "expect": "accept",
+      "note": "whitespace",
+      "parsed": {
+        "region": "51n1w-d3",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7
+      }
+    },
+    {
+      "input": "51N1W-D3.Brave.OTTER.7",
+      "expect": "accept",
+      "note": "case-insensitive",
+      "parsed": {
+        "region": "51n1w-d3",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7
+      }
+    },
+    {
+      "input": "51n1w-d3.brave.otter.7.6",
+      "expect": "accept",
+      "note": "trailing one-char check token (parsed, not verified)",
+      "parsed": {
+        "region": "51n1w-d3",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7,
+        "check": "6"
+      }
+    },
+    {
+      "input": "51n1w-d3.brave.otter.7.finch",
+      "expect": "accept",
+      "note": "trailing check word (parsed, not verified)",
+      "parsed": {
+        "region": "51n1w-d3",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7,
+        "check": "finch"
+      }
+    },
+    {
+      "input": "51n1w-d3 · brave-otter · 7",
+      "expect": "accept",
+      "note": "legacy three-token form with a hyphenated middle pair",
+      "parsed": {
+        "region": "51n1w-d3",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7
+      }
+    },
+    {
+      "input": "camden.brave.otter.7",
+      "expect": "accept",
+      "note": "an alias region parses; resolution of the alias is overlay data, not spec",
+      "parsed": {
+        "region": "camden",
+        "sector": "brave",
+        "patch": "otter",
+        "spot": 7
+      }
+    },
+    {
+      "input": "brave.otter.7",
+      "expect": "reject",
+      "note": "three tokens without a hyphenated pair — not a squarename",
+      "parsed": null
+    },
+    {
+      "input": "51n1w-d3.brave.otter.0",
+      "expect": "reject",
+      "note": "spot below 1",
+      "parsed": null
+    },
+    {
+      "input": "51n1w-d3.brave.otter.26",
+      "expect": "reject",
+      "note": "spot above 25",
+      "parsed": null
+    },
+    {
+      "input": "51n1w-d3.brave.otter",
+      "expect": "reject",
+      "note": "missing spot",
+      "parsed": null
+    },
+    {
+      "input": "51n1w-d3.brave.otter.7.k.extra",
+      "expect": "reject",
+      "note": "too many tokens",
+      "parsed": null
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "spec": "Squarenames v1 — recognised variant spellings",
+  "wordlist_version": "1.0.0",
+  "rule": "Each entry maps an accepted input spelling to the canonical word in the list. Applied as an exact-match substitution before any fuzzy correction (spec §10.1). Encoders never emit a variant. Every target is a list word; no variant is. Additive; versioned with the overlay.",
+  "notes": {
+    "meter": "one edit from both 'metre' (its variant) and 'meteor' (a different list word); the table runs first so it resolves to 'metre'.",
+    "donut, omelet, checker": "two or more edits from their canonical words, beyond fuzzy correction; only the table resolves them."
+  },
+  "adjectives": {
+    "labeled": "labelled",
+    "honored": "honoured",
+    "armored": "armoured",
+    "jeweled": "jewelled"
+  },
+  "nouns": {
+    "liter": "litre",
+    "meter": "metre",
+    "yogurt": "yoghurt",
+    "caliber": "calibre",
+    "artifact": "artefact",
+    "laborer": "labourer",
+    "parlor": "parlour",
+    "vapor": "vapour",
+    "pajamas": "pyjamas",
+    "donut": "doughnut",
+    "omelet": "omelette",
+    "harbor": "harbour",
+    "checker": "chequer",
+    "drafts": "draughts",
+    "ameba": "amoeba",
+    "prolog": "prologue",
+    "epilog": "epilogue",
+    "plimsol": "plimsoll"
+  }
+}
