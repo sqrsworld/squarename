@@ -156,4 +156,4 @@ The three nested squares in `assets/` are the Squarenames mark: the 840 m
 sector, the 15 m patch and the 3 m spot that make a name. Use it to say
 that something reads or writes squarenames. Do not use it, or the name,
 as the name of your own product or to imply endorsement; the standard is
-stewarded by SQRS and "Squarename" is its trade name.
+stewarded by SQRS and "Squarenames" is its trade name.
