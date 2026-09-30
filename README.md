@@ -1,3 +1,5 @@
+<img src="assets/squarename-mark.svg" alt="" width="48" height="48">
+
 # Squarenames
 
 A squarename is a short, speakable address for a 3-metre square anywhere on
@@ -147,3 +149,11 @@ table are additive and versioned separately.
 
 "Squarenames" and "SQRS" are names stewarded by SQRS. Only conforming
 implementations may describe themselves as implementing Squarenames.
+
+## The mark
+
+The three nested squares in `assets/` are the Squarenames mark: the 840 m
+sector, the 15 m patch and the 3 m spot that make a name. Use it to say
+that something reads or writes squarenames. Do not use it, or the name,
+as the name of your own product or to imply endorsement; the standard is
+stewarded by SQRS and "Squarename" is its trade name.
