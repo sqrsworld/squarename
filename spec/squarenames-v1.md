@@ -150,7 +150,8 @@ recover `row`/`col` by rounding.
 
 ### 3.1 Contents
 
-Two lists, frozen at **wordlist v1.0.0**:
+Two lists, published at **wordlist v1.0.0** and amended only by in-place
+retirements (§10.2); the current list is **wordlist v1.1.0**:
 
 - **ADJECTIVES**, exactly 900 words, for sectors (30 × 30).
 - **NOUNS**, exactly 3136 words, for patches (56 × 56) and for the spoken
@@ -451,9 +452,12 @@ Stated plainly so implementers and users are not surprised.
 There is one wordlist and one edition. To resolve input from writers of
 American English, an implementation applies the **recognised variant
 spellings** table (published as `variant-spellings.json`) as an exact-match
-substitution before any fuzzy correction. The table is bounded by the list:
-it contains only variants of words that are in it, and none of the variants
-is itself a list word. Encoders never emit a variant.
+substitution before any fuzzy correction, and before the retired-words table
+(§10.2). The table is bounded by the list: it contains only variants of words
+that are in it or were retired from it, and none of the variants is itself a
+list word. A variant of a retired word therefore resolves in two exact steps,
+spelling first and retirement second (`caliber` → `calibre` → `diagram`).
+Encoders never emit a variant.
 
 The table exists for the cases the confusability rule does not cover: variants
 two or more edits away (`donut`, `omelet`, `checker`), and one case where the
@@ -518,8 +522,9 @@ An implementation conforms to Squarenames v1 if it:
    strings, check tokens, a decode centre within 2.13 m, and the re-encoded
    name (or the flagged seam behaviour) as recorded;
 2. accepts and rejects the published parse vectors as stated;
-3. ships the wordlists byte-identical to v1.0.0, and the retired-words
-   table, and passes the confusability validator on the lists;
+3. ships the wordlists byte-identical to the wordlist version it declares
+   (currently v1.1.0), with the retired-words table for every earlier
+   version, and passes the confusability validator on the lists;
 4. never emits a copied or shared squarename without its region.
 
 Inputs that sit exactly on a cell, band, or region boundary are decided by

@@ -34,10 +34,18 @@ describe("retired words table", () => {
     }
   });
 
-  it("is empty at the first published wordlist", () => {
-    expect(WORDLIST_VERSION).toBe("1.0.0");
-    expect(Object.keys(RETIRED_ADJECTIVES)).toHaveLength(0);
-    expect(Object.keys(RETIRED_NOUNS)).toHaveLength(0);
+  it("wordlist 1.1.0 retired 13 adjectives and 57 nouns", () => {
+    expect(WORDLIST_VERSION).toBe("1.1.0");
+    expect(Object.keys(RETIRED_ADJECTIVES)).toHaveLength(13);
+    expect(Object.keys(RETIRED_NOUNS)).toHaveLength(57);
+    expect(currentWord("hot")).toBe("large");
+    expect(currentWord("calibre")).toBe("diagram");
     expect(currentWord("otter")).toBe("otter");
+  });
+
+  it("every entry was retired in 1.1.0", () => {
+    for (const e of [...Object.values(published.adjectives), ...Object.values(published.nouns)] as { retired_in: string }[]) {
+      expect(e.retired_in).toBe("1.1.0");
+    }
   });
 });

@@ -1,10 +1,11 @@
 {
   "spec": "Squarenames v1 — recognised variant spellings",
-  "wordlist_version": "1.0.0",
-  "rule": "Each entry maps an accepted input spelling to the canonical word in the list. Applied as an exact-match substitution before any fuzzy correction (spec §10.1). Encoders never emit a variant. Every target is a list word; no variant is. Additive; versioned with the overlay.",
+  "wordlist_version": "1.1.0",
+  "rule": "Each entry maps an accepted input spelling to its canonical word. Applied as an exact-match substitution before any fuzzy correction (spec §10.1), and before the retired-words table (§10.2). Encoders never emit a variant. Every target is a list word or a retired word; no variant is a list word. Additive; versioned with the overlay.",
   "notes": {
     "meter": "one edit from both 'metre' (its variant) and 'meteor' (a different list word); the table runs first so it resolves to 'metre'.",
-    "donut, omelet, checker": "two or more edits from their canonical words, beyond fuzzy correction; only the table resolves them."
+    "donut, omelet, checker": "two or more edits from their canonical words, beyond fuzzy correction; only the table resolves them.",
+    "caliber": "the American spelling of 'calibre', which wordlist 1.1.0 retired (replaced at its index by 'diagram'). The variant is applied first and the retired-words table second, so a name written 'caliber' still resolves to the same square."
   },
   "adjectives": {
     "labeled": "labelled",

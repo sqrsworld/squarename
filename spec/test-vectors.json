@@ -1,8 +1,8 @@
 {
   "spec": "Squarenames v1",
-  "generated_at": "2026-09-08T21:26:16.621Z",
+  "generated_at": "2026-10-02T09:46:45.573Z",
   "generator": "scripts/build-vectors.ts against the reference implementation (src/)",
-  "wordlist_version": "1.0.0",
+  "wordlist_version": "1.1.0",
   "tolerance": "the decode point must lie within 2.13 m (half a spot diagonal) of the input, and encoding it must reproduce the name exactly (spec §5)",
   "vectors": [
     {
@@ -99,12 +99,12 @@
       "id": {
         "region": "50n1w-d5",
         "sector": "airtight",
-        "patch": "keg",
+        "patch": "holiday",
         "spot": 10
       },
-      "canonical": "50n1w-d5.airtight.keg.10",
-      "canonical_with_check_char": "50n1w-d5.airtight.keg.10.g",
-      "canonical_with_check_word": "50n1w-d5.airtight.keg.10.gazebo",
+      "canonical": "50n1w-d5.airtight.holiday.10",
+      "canonical_with_check_char": "50n1w-d5.airtight.holiday.10.g",
+      "canonical_with_check_word": "50n1w-d5.airtight.holiday.10.gazebo",
       "check": {
         "value": 3357,
         "char": "g",
@@ -115,7 +115,7 @@
         "lng": -0.2
       },
       "decode_error_m": 1.202,
-      "reencoded": "50n1w-d5.airtight.keg.10"
+      "reencoded": "50n1w-d5.airtight.holiday.10"
     },
     {
       "name": "band-seam-at-51n",

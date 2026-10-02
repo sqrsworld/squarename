@@ -2,9 +2,10 @@
 
 // Recognised variant spellings (spec §10.1). An exact-match substitution from an
 // accepted input spelling to the canonical word in the frozen list, applied
-// before any fuzzy correction. The table is bounded by the list: it contains
-// only variants of words that are in it, and none of the variants is itself a
-// list word. Encoders never emit a variant.
+// before any fuzzy correction and before the retired-words table. The table is
+// bounded by the list: it contains only variants of words that are in it or
+// were retired from it (caliber → calibre → diagram), and none of the variants
+// is itself a list word. Encoders never emit a variant.
 //
 // The normative copy is spec/variant-spellings.json; a test asserts this
 // module matches it.

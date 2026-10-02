@@ -1,6 +1,6 @@
 {
   "name": "squarename",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Squarenames: a computed, offline, speakable address for every 3-metre square on Earth. Reference implementation of the Squarenames v1 specification.",
   "license": "Apache-2.0",
   "author": "SQRS",

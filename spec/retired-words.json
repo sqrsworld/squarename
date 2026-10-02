@@ -1,7 +1,359 @@
 {
-  "spec": "Squarenames v1 \u2014 retired words",
-  "wordlist_version": "1.0.0",
+  "spec": "Squarenames v1 — retired words",
+  "wordlist_version": "1.1.0",
   "rule": "A retired word was replaced in place at its index by `current`. Resolvers apply the table as an exact substitution wherever a word is looked up (decoding, check tokens, input), so a name written under an earlier list resolves to the same square. Encoders never emit a retired word. A retired word is never reused. The table is additive and versioned with the wordlist.",
-  "adjectives": {},
-  "nouns": {}
+  "adjectives": {
+    "hot": {
+      "current": "large",
+      "index": 2,
+      "retired_in": "1.1.0"
+    },
+    "abloom": {
+      "current": "natural",
+      "index": 899,
+      "retired_in": "1.1.0"
+    },
+    "titchy": {
+      "current": "modern",
+      "index": 552,
+      "retired_in": "1.1.0"
+    },
+    "whizzy": {
+      "current": "smart",
+      "index": 531,
+      "retired_in": "1.1.0"
+    },
+    "swishy": {
+      "current": "classic",
+      "index": 556,
+      "retired_in": "1.1.0"
+    },
+    "ribboned": {
+      "current": "magic",
+      "index": 161,
+      "retired_in": "1.1.0"
+    },
+    "young": {
+      "current": "perfect",
+      "index": 70,
+      "retired_in": "1.1.0"
+    },
+    "youthful": {
+      "current": "instant",
+      "index": 295,
+      "retired_in": "1.1.0"
+    },
+    "naive": {
+      "current": "metallic",
+      "index": 262,
+      "retired_in": "1.1.0"
+    },
+    "petite": {
+      "current": "regular",
+      "index": 595,
+      "retired_in": "1.1.0"
+    },
+    "tender": {
+      "current": "true",
+      "index": 616,
+      "retired_in": "1.1.0"
+    },
+    "cheeky": {
+      "current": "great",
+      "index": 347,
+      "retired_in": "1.1.0"
+    },
+    "public": {
+      "current": "fine",
+      "index": 715,
+      "retired_in": "1.1.0"
+    }
+  },
+  "nouns": {
+    "pronoun": {
+      "current": "fish",
+      "index": 1449,
+      "retired_in": "1.1.0"
+    },
+    "swamp": {
+      "current": "gift",
+      "index": 2154,
+      "retired_in": "1.1.0"
+    },
+    "caboose": {
+      "current": "answer",
+      "index": 1775,
+      "retired_in": "1.1.0"
+    },
+    "specimen": {
+      "current": "record",
+      "index": 2405,
+      "retired_in": "1.1.0"
+    },
+    "oxeye": {
+      "current": "design",
+      "index": 1453,
+      "retired_in": "1.1.0"
+    },
+    "cobnut": {
+      "current": "fashion",
+      "index": 2876,
+      "retired_in": "1.1.0"
+    },
+    "venturer": {
+      "current": "message",
+      "index": 1753,
+      "retired_in": "1.1.0"
+    },
+    "avocet": {
+      "current": "captain",
+      "index": 2855,
+      "retired_in": "1.1.0"
+    },
+    "dugong": {
+      "current": "author",
+      "index": 3115,
+      "retired_in": "1.1.0"
+    },
+    "giblets": {
+      "current": "surprise",
+      "index": 2024,
+      "retired_in": "1.1.0"
+    },
+    "enlarger": {
+      "current": "machine",
+      "index": 2991,
+      "retired_in": "1.1.0"
+    },
+    "ziti": {
+      "current": "horse",
+      "index": 2068,
+      "retired_in": "1.1.0"
+    },
+    "drinker": {
+      "current": "journey",
+      "index": 1350,
+      "retired_in": "1.1.0"
+    },
+    "keg": {
+      "current": "holiday",
+      "index": 1379,
+      "retired_in": "1.1.0"
+    },
+    "cocktail": {
+      "current": "lunch",
+      "index": 559,
+      "retired_in": "1.1.0"
+    },
+    "chaser": {
+      "current": "champion",
+      "index": 917,
+      "retired_in": "1.1.0"
+    },
+    "ashtray": {
+      "current": "bicycle",
+      "index": 1340,
+      "retired_in": "1.1.0"
+    },
+    "playtime": {
+      "current": "harvest",
+      "index": 1378,
+      "retired_in": "1.1.0"
+    },
+    "bathtime": {
+      "current": "outfit",
+      "index": 2946,
+      "retired_in": "1.1.0"
+    },
+    "bedtime": {
+      "current": "reward",
+      "index": 1593,
+      "retired_in": "1.1.0"
+    },
+    "anaconda": {
+      "current": "image",
+      "index": 1352,
+      "retired_in": "1.1.0"
+    },
+    "salami": {
+      "current": "echo",
+      "index": 1774,
+      "retired_in": "1.1.0"
+    },
+    "joystick": {
+      "current": "sprint",
+      "index": 914,
+      "retired_in": "1.1.0"
+    },
+    "lotion": {
+      "current": "comfort",
+      "index": 616,
+      "retired_in": "1.1.0"
+    },
+    "magnum": {
+      "current": "headline",
+      "index": 2450,
+      "retired_in": "1.1.0"
+    },
+    "calibre": {
+      "current": "diagram",
+      "index": 899,
+      "retired_in": "1.1.0"
+    },
+    "breather": {
+      "current": "nickel",
+      "index": 1575,
+      "retired_in": "1.1.0"
+    },
+    "grabber": {
+      "current": "glimpse",
+      "index": 1155,
+      "retired_in": "1.1.0"
+    },
+    "fishnet": {
+      "current": "update",
+      "index": 1159,
+      "retired_in": "1.1.0"
+    },
+    "chatroom": {
+      "current": "signal",
+      "index": 1039,
+      "retired_in": "1.1.0"
+    },
+    "teenager": {
+      "current": "league",
+      "index": 692,
+      "retired_in": "1.1.0"
+    },
+    "youth": {
+      "current": "quiz",
+      "index": 2276,
+      "retired_in": "1.1.0"
+    },
+    "pupil": {
+      "current": "orbit",
+      "index": 2380,
+      "retired_in": "1.1.0"
+    },
+    "brownie": {
+      "current": "award",
+      "index": 1189,
+      "retired_in": "1.1.0"
+    },
+    "mushroom": {
+      "current": "exercise",
+      "index": 1618,
+      "retired_in": "1.1.0"
+    },
+    "pub": {
+      "current": "frame",
+      "index": 215,
+      "retired_in": "1.1.0"
+    },
+    "tavern": {
+      "current": "voice",
+      "index": 729,
+      "retired_in": "1.1.0"
+    },
+    "barroom": {
+      "current": "phrase",
+      "index": 2045,
+      "retired_in": "1.1.0"
+    },
+    "winery": {
+      "current": "flight",
+      "index": 725,
+      "retired_in": "1.1.0"
+    },
+    "vineyard": {
+      "current": "weather",
+      "index": 655,
+      "retired_in": "1.1.0"
+    },
+    "cabernet": {
+      "current": "coin",
+      "index": 2504,
+      "retired_in": "1.1.0"
+    },
+    "cask": {
+      "current": "pattern",
+      "index": 1477,
+      "retired_in": "1.1.0"
+    },
+    "tankard": {
+      "current": "sound",
+      "index": 2964,
+      "retired_in": "1.1.0"
+    },
+    "flagon": {
+      "current": "choice",
+      "index": 1930,
+      "retired_in": "1.1.0"
+    },
+    "decanter": {
+      "current": "network",
+      "index": 2812,
+      "retired_in": "1.1.0"
+    },
+    "skunk": {
+      "current": "project",
+      "index": 2175,
+      "retired_in": "1.1.0"
+    },
+    "bap": {
+      "current": "question",
+      "index": 2987,
+      "retired_in": "1.1.0"
+    },
+    "crutch": {
+      "current": "bargain",
+      "index": 1777,
+      "retired_in": "1.1.0"
+    },
+    "chimp": {
+      "current": "board",
+      "index": 2224,
+      "retired_in": "1.1.0"
+    },
+    "gorilla": {
+      "current": "trade",
+      "index": 2958,
+      "retired_in": "1.1.0"
+    },
+    "casino": {
+      "current": "material",
+      "index": 79,
+      "retired_in": "1.1.0"
+    },
+    "poker": {
+      "current": "subject",
+      "index": 45,
+      "retired_in": "1.1.0"
+    },
+    "roulette": {
+      "current": "research",
+      "index": 337,
+      "retired_in": "1.1.0"
+    },
+    "jackpot": {
+      "current": "cartoon",
+      "index": 762,
+      "retired_in": "1.1.0"
+    },
+    "lotto": {
+      "current": "effect",
+      "index": 684,
+      "retired_in": "1.1.0"
+    },
+    "hypnosis": {
+      "current": "sandwich",
+      "index": 2461,
+      "retired_in": "1.1.0"
+    },
+    "swallow": {
+      "current": "shield",
+      "index": 2226,
+      "retired_in": "1.1.0"
+    }
+  }
 }
